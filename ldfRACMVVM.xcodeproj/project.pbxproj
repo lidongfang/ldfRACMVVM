@@ -17,6 +17,7 @@
 		628B36221E63D3E20081A0E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 628B36201E63D3E20081A0E2 /* LaunchScreen.storyboard */; };
 		628B36301E63DBF90081A0E2 /* LdfNetWorkingClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 628B362F1E63DBF90081A0E2 /* LdfNetWorkingClient.m */; };
 		628B36331E641E5D0081A0E2 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 628B36321E641E5D0081A0E2 /* Tools.m */; };
+		628B363A1E642FC30081A0E2 /* SuperViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 628B36391E642FC30081A0E2 /* SuperViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		628B36311E641E5D0081A0E2 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		628B36321E641E5D0081A0E2 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		628B36341E641F6B0081A0E2 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		628B36381E642FC30081A0E2 /* SuperViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperViewModel.h; sourceTree = "<group>"; };
+		628B36391E642FC30081A0E2 /* SuperViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperViewModel.m; sourceTree = "<group>"; };
 		A829AB20598164D9DA712F3D /* libPods-ldfRACMVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ldfRACMVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57B54A51445BD862AA57BE8 /* Pods-ldfRACMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ldfRACMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ldfRACMVVM/Pods-ldfRACMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		D95684B532DFB5AE2C97A473 /* Pods-ldfRACMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ldfRACMVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-ldfRACMVVM/Pods-ldfRACMVVM.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +117,8 @@
 				628B36321E641E5D0081A0E2 /* Tools.m */,
 				628B362E1E63DBF90081A0E2 /* LdfNetWorkingClient.h */,
 				628B362F1E63DBF90081A0E2 /* LdfNetWorkingClient.m */,
+				628B36381E642FC30081A0E2 /* SuperViewModel.h */,
+				628B36391E642FC30081A0E2 /* SuperViewModel.m */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 				628B361D1E63D3E20081A0E2 /* ldfRACMVVM.xcdatamodeld in Sources */,
 				628B36331E641E5D0081A0E2 /* Tools.m in Sources */,
 				628B36141E63D3E20081A0E2 /* AppDelegate.m in Sources */,
+				628B363A1E642FC30081A0E2 /* SuperViewModel.m in Sources */,
 				628B36111E63D3E20081A0E2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
