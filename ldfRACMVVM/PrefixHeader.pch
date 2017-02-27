@@ -8,6 +8,8 @@
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveCocoa/RACEXTScope.h>
 #import "Tools.h"
 
 #endif /* PrefixHeader_pch */
