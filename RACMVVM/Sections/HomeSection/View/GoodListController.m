@@ -28,7 +28,7 @@
     }];
     [self.listVM.successObject subscribeNext:^(id x) {
         @strongify(self);
-        //隐藏loading，刷新view
+        //隐藏loading，获取GoodListModel数据，刷新view
     }];
     [self.listVM.errorObject subscribeNext:^(id x) {
        //隐藏loading，并且弹出错误消息

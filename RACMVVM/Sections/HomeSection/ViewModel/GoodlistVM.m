@@ -23,18 +23,13 @@
     }] subscribeNext:^(id x) {
         [self getGoodsList:[x integerValue]];
     }];
-    self.iSearchType = @"gcIdSearch";
-    self.keyword = @"200";
     self.listOrder = 1;
-    self.iSortField = @"";
-    self.iSortOrder = @"";
-    self.iGoodsListArr = [[NSMutableArray alloc] init];
     self.iPageSize = 10;
-    self.selectedSignal = [RACSubject subject];
+    self.outPutArray=[[NSMutableArray alloc]init];
 }
 
 - (void)getGoodsList:(NSInteger)page {
-    NSDictionary *_dic = @{@"searchType":self.iSearchType,@"keyword":self.keyword,@"sortField":self.iSortField,@"sortOrder":self.iSortOrder,@"specFilter":self.goodsTypeStr.length== 0?@"":self.goodsTypeStr,@"brandId":@"",@"pageSize":[NSNumber numberWithInteger:self.iPageSize],@"pageNo":@(page)};
+    NSDictionary *_dic = @{@"pageSize":[NSNumber numberWithInteger:self.iPageSize],@"pageNo":@(page)};
     [self.requestBeforeObject sendNext:nil];
     @weakify(self);
     [[LdfNetWorkingClient sharedInstance] requestForUrl:@"" withParams:_dic completion:^(NSDictionary *netRequestResponseDictionary, NSError *error) {
@@ -42,6 +37,8 @@
         if (error==nil) {
             if ([Tools Object_IsNotBlank:netRequestResponseDictionary]) {
                 [self.successObject sendNext:nil];
+                //处理数据源，转为GoodListModel模型放在容器outPutArray中，通过Controller中唯一的一个GoodlistVM来调用
+                
             }else{
                 [self.errorObject sendNext:@"没有找到符合的商品"];
             }

@@ -7,18 +7,14 @@
 //
 
 #import "SuperViewModel.h"
-
+#import "GoodListModel.h"
 @interface GoodlistVM : SuperViewModel
-@property (nonatomic , strong) NSString *goodsTypeStr;
-@property (nonatomic, strong) NSString  *goodsBrandID;
-@property (nonatomic, strong) NSString  *keyword;
-@property (nonatomic,strong) NSString *iSearchType;
-@property (nonatomic,strong) NSString *iSortField;
-@property (nonatomic,strong) NSString *iSortOrder;
+//参数 输入i
 @property (nonatomic) NSInteger saleOrder;
 @property (nonatomic) NSInteger listOrder;
 @property (nonatomic) NSInteger iPageSize;
 @property (nonatomic) NSInteger iPageNo;
-@property (nonatomic, strong) RACSubject *selectedSignal;
-@property (strong, nonatomic) NSArray *iGoodsListArr;
+//参数 输出o
+@property (nonatomic,strong) NSMutableArray <GoodListModel*> *outPutArray;
+
 @end

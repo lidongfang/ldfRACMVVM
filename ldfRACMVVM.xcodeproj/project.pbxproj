@@ -22,6 +22,8 @@
 		628B36431E6510F60081A0E2 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 628B36421E6510F60081A0E2 /* BaseViewController.m */; };
 		628B36471E6511140081A0E2 /* GoodListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 628B36451E6511140081A0E2 /* GoodListController.m */; };
 		628B36481E6511140081A0E2 /* GoodListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 628B36461E6511140081A0E2 /* GoodListController.xib */; };
+		628B364B1E6524BE0081A0E2 /* SuperModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 628B364A1E6524BE0081A0E2 /* SuperModel.m */; };
+		628B364E1E6525150081A0E2 /* GoodListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 628B364D1E6525150081A0E2 /* GoodListModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,10 @@
 		628B36441E6511140081A0E2 /* GoodListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodListController.h; sourceTree = "<group>"; };
 		628B36451E6511140081A0E2 /* GoodListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodListController.m; sourceTree = "<group>"; };
 		628B36461E6511140081A0E2 /* GoodListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoodListController.xib; sourceTree = "<group>"; };
+		628B36491E6524BE0081A0E2 /* SuperModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperModel.h; sourceTree = "<group>"; };
+		628B364A1E6524BE0081A0E2 /* SuperModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperModel.m; sourceTree = "<group>"; };
+		628B364C1E6525150081A0E2 /* GoodListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodListModel.h; sourceTree = "<group>"; };
+		628B364D1E6525150081A0E2 /* GoodListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodListModel.m; sourceTree = "<group>"; };
 		A829AB20598164D9DA712F3D /* libPods-ldfRACMVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ldfRACMVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57B54A51445BD862AA57BE8 /* Pods-ldfRACMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ldfRACMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ldfRACMVVM/Pods-ldfRACMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		D95684B532DFB5AE2C97A473 /* Pods-ldfRACMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ldfRACMVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-ldfRACMVVM/Pods-ldfRACMVVM.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +138,8 @@
 				628B36391E642FC30081A0E2 /* SuperViewModel.m */,
 				628B36411E6510F60081A0E2 /* BaseViewController.h */,
 				628B36421E6510F60081A0E2 /* BaseViewController.m */,
+				628B36491E6524BE0081A0E2 /* SuperModel.h */,
+				628B364A1E6524BE0081A0E2 /* SuperModel.m */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -157,6 +165,8 @@
 		628B363B1E650AF60081A0E2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				628B364C1E6525150081A0E2 /* GoodListModel.h */,
+				628B364D1E6525150081A0E2 /* GoodListModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -321,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				628B364B1E6524BE0081A0E2 /* SuperModel.m in Sources */,
 				628B36171E63D3E20081A0E2 /* ViewController.m in Sources */,
 				628B36431E6510F60081A0E2 /* BaseViewController.m in Sources */,
 				628B36301E63DBF90081A0E2 /* LdfNetWorkingClient.m in Sources */,
@@ -328,6 +339,7 @@
 				628B36331E641E5D0081A0E2 /* Tools.m in Sources */,
 				628B36141E63D3E20081A0E2 /* AppDelegate.m in Sources */,
 				628B363A1E642FC30081A0E2 /* SuperViewModel.m in Sources */,
+				628B364E1E6525150081A0E2 /* GoodListModel.m in Sources */,
 				628B36111E63D3E20081A0E2 /* main.m in Sources */,
 				628B36471E6511140081A0E2 /* GoodListController.m in Sources */,
 				628B36401E650BF60081A0E2 /* GoodlistVM.m in Sources */,
