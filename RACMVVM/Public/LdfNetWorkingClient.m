@@ -36,7 +36,7 @@
 
 - (instancetype)initWithClientType:(NSString *)clientType {
     if (self = [super init])
-        self.clientType = clientType;
+    self.clientType = clientType;
     self .manager = [AFHTTPSessionManager manager];
     self.manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     self.manager.responseSerializer = [AFHTTPResponseSerializer serializer];

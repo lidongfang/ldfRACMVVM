@@ -42,7 +42,6 @@
 		628B362F1E63DBF90081A0E2 /* LdfNetWorkingClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LdfNetWorkingClient.m; sourceTree = "<group>"; };
 		628B36311E641E5D0081A0E2 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		628B36321E641E5D0081A0E2 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
-		628B36341E641F6B0081A0E2 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		628B36381E642FC30081A0E2 /* SuperViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperViewModel.h; sourceTree = "<group>"; };
 		628B36391E642FC30081A0E2 /* SuperViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperViewModel.m; sourceTree = "<group>"; };
 		628B363E1E650BF60081A0E2 /* GoodlistVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodlistVM.h; sourceTree = "<group>"; };
@@ -56,6 +55,8 @@
 		628B364A1E6524BE0081A0E2 /* SuperModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperModel.m; sourceTree = "<group>"; };
 		628B364C1E6525150081A0E2 /* GoodListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodListModel.h; sourceTree = "<group>"; };
 		628B364D1E6525150081A0E2 /* GoodListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodListModel.m; sourceTree = "<group>"; };
+		628B36501E6572110081A0E2 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		628B36511E6572340081A0E2 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		A829AB20598164D9DA712F3D /* libPods-ldfRACMVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ldfRACMVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57B54A51445BD862AA57BE8 /* Pods-ldfRACMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ldfRACMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ldfRACMVVM/Pods-ldfRACMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		D95684B532DFB5AE2C97A473 /* Pods-ldfRACMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ldfRACMVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-ldfRACMVVM/Pods-ldfRACMVVM.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,7 +106,6 @@
 				628B36231E63D3E20081A0E2 /* Info.plist */,
 				628B361B1E63D3E20081A0E2 /* ldfRACMVVM.xcdatamodeld */,
 				628B360F1E63D3E20081A0E2 /* Supporting Files */,
-				628B36341E641F6B0081A0E2 /* PrefixHeader.pch */,
 			);
 			path = ldfRACMVVM;
 			sourceTree = "<group>";
@@ -121,6 +121,7 @@
 		628B362A1E63D8070081A0E2 /* RACMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				628B364F1E6572110081A0E2 /* Config */,
 				628B362B1E63D8070081A0E2 /* Public */,
 				628B362C1E63D8070081A0E2 /* Sections */,
 			);
@@ -188,6 +189,15 @@
 				628B363F1E650BF60081A0E2 /* GoodlistVM.m */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		628B364F1E6572110081A0E2 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				628B36501E6572110081A0E2 /* PrefixHeader.pch */,
+				628B36511E6572340081A0E2 /* Config.h */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		B50C3704E7C123ADD87E263B /* Pods */ = {
@@ -464,7 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E3LN2QH987;
-				GCC_PREFIX_HEADER = ldfRACMVVM/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = RACMVVM/Config/PrefixHeader.pch;
 				INFOPLIST_FILE = ldfRACMVVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hk.ldfRACMVVM;
@@ -478,7 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E3LN2QH987;
-				GCC_PREFIX_HEADER = ldfRACMVVM/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = RACMVVM/Config/PrefixHeader.pch;
 				INFOPLIST_FILE = ldfRACMVVM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hk.ldfRACMVVM;

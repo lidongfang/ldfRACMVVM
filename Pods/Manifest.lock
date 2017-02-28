@@ -23,16 +23,19 @@ PODS:
     - ReactiveCocoa/Core
   - ReactiveViewModel (0.3):
     - ReactiveCocoa (~> 2.4)
+  - SVProgressHUD (2.1.2)
 
 DEPENDENCIES:
   - AFNetworking (= 3.1.0)
   - ReactiveViewModel
+  - SVProgressHUD (~> 2.1.2)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   ReactiveViewModel: 58918dcbcec2d3151195ab1ed9163c57a8163999
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: a09f2af9a5742d652701750cefd3d9fdbb2b6d5c
+PODFILE CHECKSUM: ed04211afb24b39af2f476bbee1f32562bfab5d6
 
 COCOAPODS: 1.1.1

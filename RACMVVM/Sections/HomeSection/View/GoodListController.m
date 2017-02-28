@@ -26,6 +26,8 @@
     [self.listVM.requestBeforeObject subscribeNext:^(id x) {
         @strongify(self);
         //弹出loading
+        [SVProgressHUD showWithStatus:@"数据加载中"];
+        [SVProgressHUD setDefaultAnimationType:SVProgressHUDAnimationTypeNative];
     }];
     [self.listVM.successObject subscribeNext:^(id x) {
         @strongify(self);

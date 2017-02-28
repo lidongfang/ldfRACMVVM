@@ -8,9 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^NetRequestdCompletion)(NSDictionary *netRequestResponseDictionary, NSError *error);
-typedef void (^DataDownloadCompletion)(id data, NSError *error);
-
 @interface LdfNetWorkingClient : NSObject
 
 + (instancetype)sharedInstance;
