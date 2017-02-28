@@ -9,4 +9,5 @@
 #import "BaseViewController.h"
 #import "GoodlistVM.h"
 @interface GoodListController : BaseViewController
+@property (nonatomic,strong) GoodlistVM *listVM;
 @end
