@@ -23,6 +23,11 @@
     }] subscribeNext:^(id x) {
         [self getGoodsList:[x integerValue]];
     }];
+    [[RACObserve(self.listModel, keyword) filter:^BOOL(NSString *value) {
+        return value.length!=0;
+    }] subscribeNext:^(id x) {
+        self.listModel.keyword=[NSString stringWithFormat:@"%@",x];
+    }];
     self.listOrder = 1;
     self.iPageSize = 10;
     self.outPutArray=[[NSMutableArray alloc]init];

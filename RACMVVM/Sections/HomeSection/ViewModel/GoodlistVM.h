@@ -15,6 +15,7 @@
 @property (nonatomic) NSInteger iPageSize;
 @property (nonatomic) NSInteger iPageNo;
 //参数 输出o
+@property (nonatomic,strong) GoodListModel *listModel;
 @property (nonatomic,strong) NSMutableArray <GoodListModel*> *outPutArray;
 
 @end

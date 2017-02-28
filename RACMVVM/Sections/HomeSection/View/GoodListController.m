@@ -18,6 +18,7 @@
     [super viewDidLoad];
     [self bind];
     self.listVM.iPageNo=1;
+    self.listVM.listModel.keyword=@"你好";
 }
 -(void)bind{
     @weakify(self);
