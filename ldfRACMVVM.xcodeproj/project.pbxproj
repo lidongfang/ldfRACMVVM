@@ -134,8 +134,32 @@
 		628B362D1E63D8070081A0E2 /* HomeSection */ = {
 			isa = PBXGroup;
 			children = (
+				628B363B1E650AF60081A0E2 /* Model */,
+				628B363C1E650AF60081A0E2 /* View */,
+				628B363D1E650AF60081A0E2 /* ViewModel */,
 			);
 			path = HomeSection;
+			sourceTree = "<group>";
+		};
+		628B363B1E650AF60081A0E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		628B363C1E650AF60081A0E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		628B363D1E650AF60081A0E2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		B50C3704E7C123ADD87E263B /* Pods */ = {
