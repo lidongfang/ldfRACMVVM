@@ -18,6 +18,10 @@
 		628B36301E63DBF90081A0E2 /* LdfNetWorkingClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 628B362F1E63DBF90081A0E2 /* LdfNetWorkingClient.m */; };
 		628B36331E641E5D0081A0E2 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 628B36321E641E5D0081A0E2 /* Tools.m */; };
 		628B363A1E642FC30081A0E2 /* SuperViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 628B36391E642FC30081A0E2 /* SuperViewModel.m */; };
+		628B36401E650BF60081A0E2 /* GoodlistVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 628B363F1E650BF60081A0E2 /* GoodlistVM.m */; };
+		628B36431E6510F60081A0E2 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 628B36421E6510F60081A0E2 /* BaseViewController.m */; };
+		628B36471E6511140081A0E2 /* GoodListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 628B36451E6511140081A0E2 /* GoodListController.m */; };
+		628B36481E6511140081A0E2 /* GoodListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 628B36461E6511140081A0E2 /* GoodListController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,13 @@
 		628B36341E641F6B0081A0E2 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		628B36381E642FC30081A0E2 /* SuperViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperViewModel.h; sourceTree = "<group>"; };
 		628B36391E642FC30081A0E2 /* SuperViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperViewModel.m; sourceTree = "<group>"; };
+		628B363E1E650BF60081A0E2 /* GoodlistVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodlistVM.h; sourceTree = "<group>"; };
+		628B363F1E650BF60081A0E2 /* GoodlistVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodlistVM.m; sourceTree = "<group>"; };
+		628B36411E6510F60081A0E2 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		628B36421E6510F60081A0E2 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		628B36441E6511140081A0E2 /* GoodListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodListController.h; sourceTree = "<group>"; };
+		628B36451E6511140081A0E2 /* GoodListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodListController.m; sourceTree = "<group>"; };
+		628B36461E6511140081A0E2 /* GoodListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GoodListController.xib; sourceTree = "<group>"; };
 		A829AB20598164D9DA712F3D /* libPods-ldfRACMVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ldfRACMVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57B54A51445BD862AA57BE8 /* Pods-ldfRACMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ldfRACMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ldfRACMVVM/Pods-ldfRACMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		D95684B532DFB5AE2C97A473 /* Pods-ldfRACMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ldfRACMVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-ldfRACMVVM/Pods-ldfRACMVVM.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +130,8 @@
 				628B362F1E63DBF90081A0E2 /* LdfNetWorkingClient.m */,
 				628B36381E642FC30081A0E2 /* SuperViewModel.h */,
 				628B36391E642FC30081A0E2 /* SuperViewModel.m */,
+				628B36411E6510F60081A0E2 /* BaseViewController.h */,
+				628B36421E6510F60081A0E2 /* BaseViewController.m */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -151,6 +164,9 @@
 		628B363C1E650AF60081A0E2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				628B36441E6511140081A0E2 /* GoodListController.h */,
+				628B36451E6511140081A0E2 /* GoodListController.m */,
+				628B36461E6511140081A0E2 /* GoodListController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -158,6 +174,8 @@
 		628B363D1E650AF60081A0E2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				628B363E1E650BF60081A0E2 /* GoodlistVM.h */,
+				628B363F1E650BF60081A0E2 /* GoodlistVM.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -241,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				628B36481E6511140081A0E2 /* GoodListController.xib in Resources */,
 				628B36221E63D3E20081A0E2 /* LaunchScreen.storyboard in Resources */,
 				628B361F1E63D3E20081A0E2 /* Assets.xcassets in Resources */,
 				628B361A1E63D3E20081A0E2 /* Main.storyboard in Resources */,
@@ -303,12 +322,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				628B36171E63D3E20081A0E2 /* ViewController.m in Sources */,
+				628B36431E6510F60081A0E2 /* BaseViewController.m in Sources */,
 				628B36301E63DBF90081A0E2 /* LdfNetWorkingClient.m in Sources */,
 				628B361D1E63D3E20081A0E2 /* ldfRACMVVM.xcdatamodeld in Sources */,
 				628B36331E641E5D0081A0E2 /* Tools.m in Sources */,
 				628B36141E63D3E20081A0E2 /* AppDelegate.m in Sources */,
 				628B363A1E642FC30081A0E2 /* SuperViewModel.m in Sources */,
 				628B36111E63D3E20081A0E2 /* main.m in Sources */,
+				628B36471E6511140081A0E2 /* GoodListController.m in Sources */,
+				628B36401E650BF60081A0E2 /* GoodlistVM.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

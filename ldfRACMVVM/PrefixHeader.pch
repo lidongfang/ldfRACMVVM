@@ -11,6 +11,7 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <ReactiveCocoa/RACEXTScope.h>
 #import "SuperViewModel.h"
+#import "LdfNetWorkingClient.h"
 #import "Tools.h"
 
 #endif /* PrefixHeader_pch */

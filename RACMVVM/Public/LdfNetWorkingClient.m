@@ -29,7 +29,6 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedInstance = [[self alloc] initWithClientType:@"iOS"];
-        
     });
     
     return sharedInstance;
@@ -49,34 +48,27 @@
 
 - (NSURLSessionDataTask *)requestForUrl:(NSString *)url
                              withParams:(NSDictionary *)params
-                             completion:(DataDownloadCompletion)completion {
-    
+                             completion:(NetRequestdCompletion)completion {
     if (!completion) return nil;
-    
-    
     NSURLSessionDataTask *dataTask = [self.manager POST:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
         NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableContainers|
                                         NSJSONReadingMutableLeaves error:nil];
 #ifdef  DEBUG
 
         
 #endif
-        
-       
-       
-        
         if ([Tools Object_IsNotBlank:dataDictionary[@"data"]]) {
-            
+            //有返回数据
             completion(dataDictionary,nil);
         }else{
             NSMutableDictionary *SetData=[NSMutableDictionary dictionaryWithDictionary:dataDictionary];
             [SetData setValue:[NSDictionary dictionary] forKey:@"data"];
+            //返回数据为空
             completion(SetData,nil);
             return;
         }
-        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        //可认为网络异常
         completion(nil,error);
     }];
     return dataTask;

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void (^NetRequestdCompletion)(NSDictionary *netRequestResponseDictionary, NSError *error);
 typedef void (^DataDownloadCompletion)(id data, NSError *error);
 
 @interface LdfNetWorkingClient : NSObject
@@ -16,7 +17,7 @@ typedef void (^DataDownloadCompletion)(id data, NSError *error);
 /**
  * 普通的网络接口
  */
-- (NSURLSessionDataTask *)requestForUrl:(NSString *)url withParams:(NSDictionary *)params completion:(DataDownloadCompletion)completion;
+- (NSURLSessionDataTask *)requestForUrl:(NSString *)url withParams:(NSDictionary *)params completion:(NetRequestdCompletion)completion;
 /**
  * 文件的下载
  */
