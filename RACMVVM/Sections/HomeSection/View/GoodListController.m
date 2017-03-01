@@ -9,6 +9,8 @@
 #import "GoodListController.h"
 
 @interface GoodListController ()
+@property (weak, nonatomic) IBOutlet UITextField *textFiled;
+
 
 @end
 
@@ -18,7 +20,14 @@
     [super viewDidLoad];
     [self bind];
     self.listVM.iPageNo=1;
-    self.listVM.listModel.keyword=@"你好";
+    @weakify(self);
+    [[self.textFiled.rac_textSignal
+      filter:^BOOL(NSString*text){
+          return text.length > 3;
+      }]subscribeNext:^(id x){
+         @strongify(self);
+         self.listVM.listModel.keyword=[NSString stringWithFormat:@"%@",x];
+     }];
 }
 -(void)bind{
     @weakify(self);
@@ -26,8 +35,8 @@
     [self.listVM.requestBeforeObject subscribeNext:^(id x) {
         @strongify(self);
         //弹出loading
-        [SVProgressHUD showWithStatus:@"数据加载中"];
-        [SVProgressHUD setDefaultAnimationType:SVProgressHUDAnimationTypeNative];
+//        [SVProgressHUD showWithStatus:@"数据加载中"];
+//        [SVProgressHUD setDefaultAnimationType:SVProgressHUDAnimationTypeNative];
     }];
     [self.listVM.successObject subscribeNext:^(id x) {
         @strongify(self);
