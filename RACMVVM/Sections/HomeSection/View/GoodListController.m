@@ -28,6 +28,8 @@
          @strongify(self);
          self.listVM.listModel.keyword=[NSString stringWithFormat:@"%@",x];
      }];
+    [self.listVM.dic setValue:@"shdhajks " forKey:@"1rr"];
+    self.listVM.valiteToLogin=YES;
 }
 -(void)bind{
     @weakify(self);

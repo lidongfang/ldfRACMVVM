@@ -14,8 +14,9 @@
 @property (nonatomic) NSInteger listOrder;
 @property (nonatomic) NSInteger iPageSize;
 @property (nonatomic) NSInteger iPageNo;
+@property (nonatomic,assign) BOOL valiteToLogin;
 //参数 输出o
 @property (nonatomic,strong) GoodListModel *listModel;
 @property (nonatomic,strong) NSMutableArray <GoodListModel*> *outPutArray;
-
+@property (nonatomic,strong) NSMutableDictionary *dic;
 @end

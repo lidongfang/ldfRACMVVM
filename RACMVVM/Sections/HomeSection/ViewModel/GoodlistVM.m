@@ -19,15 +19,29 @@
 }
 - (void)initialize {
     self.listModel=[[GoodListModel alloc]init];
+    self.dic=[NSMutableDictionary dictionary];
+    @weakify(self);
     [[RACObserve(self, iPageNo) filter:^BOOL(NSNumber *value) {
-        return value.integerValue!=0;
+        return value.integerValue>0;
     }] subscribeNext:^(id x) {
+        @strongify(self);
         [self getGoodsList:[x integerValue]];
     }];
+   
     [[RACObserve(self.listModel, keyword) filter:^BOOL(NSString *value) {
         return value.length!=0;
     }] subscribeNext:^(id x) {
         NSLog(@"------%@",[NSString stringWithFormat:@"%@",x]);
+    }];
+    [self.dic.rac_sequence.signal subscribeNext:^(id x) {
+        NSLog(@"dic------%@",[NSString stringWithFormat:@"%@",self.dic]);
+        
+    }];
+    [[RACObserve(self, valiteToLogin) filter:^BOOL(NSNumber *value) {
+        return value.integerValue>0;
+    }] subscribeNext:^(id x) {
+        @strongify(self);
+        [self getGoodsList:[x integerValue]];
     }];
     self.listOrder = 1;
     self.iPageSize = 10;
